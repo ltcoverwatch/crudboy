@@ -6,13 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
-@Service
-public class MyUserService {
-    @Autowired
-    MyUserDao myUserDao;
+public interface MyUserService {
 
-    public List<MyUser> findAll(){
-        return myUserDao.findAll();
-    }
+    public List<MyUser> findAll();
+
+    public Optional<MyUser> findById(Integer id);
+
+    public MyUser save(MyUser newUser);
+
+    public MyUser update(MyUser myUser);
+
+    public void deleteById(Integer id);
+
 }

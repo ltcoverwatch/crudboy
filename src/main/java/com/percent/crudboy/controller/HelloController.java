@@ -31,12 +31,12 @@ public class HelloController {
         }
         return user;
     }
-
-    @Autowired
-    MyUserService myUserService;
-
-    @RequestMapping("/list")
-    public List<MyUser> findAll(){
-        return myUserService.findAll();
-    }
+//
+//    @Autowired
+//    MyUserService myUserService;
+//
+//    @RequestMapping("/list")
+//    public List<MyUser> findAll(){
+//        return myUserService.findAll();
+//    }
 }
