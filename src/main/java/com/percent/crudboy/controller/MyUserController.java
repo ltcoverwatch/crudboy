@@ -36,4 +36,9 @@ public class MyUserController {
         return myUserService.save(newUser);
     }
 
+    @PutMapping("/update")
+    public MyUser update(MyUser updateUser){
+        return myUserService.update(updateUser);
+    }
+
 }

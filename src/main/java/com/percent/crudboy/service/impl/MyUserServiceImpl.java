@@ -36,7 +36,6 @@ public class MyUserServiceImpl implements MyUserService {
 
     @Override
     public MyUser save(MyUser newUser){
-        //myUserDao.save(newUser);
         return myUserDao.save(newUser);
     }
 }
