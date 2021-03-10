@@ -22,12 +22,12 @@ public class MyUserController {
     }
 
     @GetMapping("/{id}")
-    public Optional<MyUser> findById(@PathVariable("id") Integer id){
+    public Optional<MyUser> findById(@PathVariable("id") Long id){
         return myUserService.findById(id);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteById(@PathVariable("id") Integer id){
+    public void deleteById(@PathVariable("id") Long id){
         myUserService.deleteById(id);
     }
 

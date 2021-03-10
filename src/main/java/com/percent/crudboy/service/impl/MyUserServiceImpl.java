@@ -15,7 +15,7 @@ public class MyUserServiceImpl implements MyUserService {
     MyUserDao myUserDao;
 
     @Override
-    public Optional<MyUser> findById(Integer id) {
+    public Optional<MyUser> findById(Long id) {
         return myUserDao.findById(id);
     }
 
@@ -25,7 +25,7 @@ public class MyUserServiceImpl implements MyUserService {
     }
 
     @Override
-    public void deleteById(Integer id) {
+    public void deleteById(Long id) {
         myUserDao.deleteById(id);
     }
 

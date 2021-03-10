@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 
-public interface MyUserDao extends JpaRepository<MyUser, Integer> {
+public interface MyUserDao extends JpaRepository<MyUser, Long> {
 
 }

@@ -21,11 +21,11 @@ public class HelloController {
     public MyUser sayHelloUser(@PathVariable Integer id){
         MyUser user = new MyUser();
         if(id == 1){
-            user.setUserId(1);
+            user.setUserId(1L);
             user.setUserName("xiaoming");
             user.setPassword("123456");
         }else {
-            user.setUserId(2);
+            user.setUserId(2L);
             user.setUserName("ming");
             user.setPassword("123");
         }
