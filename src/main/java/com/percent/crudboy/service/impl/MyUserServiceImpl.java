@@ -15,27 +15,27 @@ public class MyUserServiceImpl implements MyUserService {
     MyUserDao myUserDao;
 
     @Override
-    public Optional<MyUser> findById(Long id) {
-        return myUserDao.findById(id);
+    public MyUser findUserById(Long id) {
+        return myUserDao.findById(id).orElse(null);
     }
 
     @Override
-    public MyUser update(MyUser myUser) {
-        return myUserDao.saveAndFlush(myUser);
+    public MyUser updateUser(MyUser myUser) {
+        return myUserDao.save(myUser);
     }
 
     @Override
-    public void deleteById(Long id) {
+    public void deleteUser(Long id) {
         myUserDao.deleteById(id);
     }
 
     @Override
-    public List<MyUser> findAll(){
+    public List<MyUser> findAllUser(){
         return myUserDao.findAll();
     }
 
     @Override
-    public MyUser save(MyUser newUser){
+    public MyUser insertUser(MyUser newUser){
         return myUserDao.save(newUser);
     }
 }

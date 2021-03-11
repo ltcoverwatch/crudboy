@@ -10,14 +10,14 @@ import java.util.Optional;
 
 public interface MyUserService {
 
-    List<MyUser> findAll();
+    List<MyUser> findAllUser();
 
-    Optional<MyUser> findById(Long id);
+    MyUser findUserById(Long id);
 
-    MyUser save(MyUser newUser);
+    MyUser insertUser(MyUser newUser);
 
-    MyUser update(MyUser myUser);
+    MyUser updateUser(MyUser myUser);
 
-    void deleteById(Long id);
+    void deleteUser(Long id);
 
 }

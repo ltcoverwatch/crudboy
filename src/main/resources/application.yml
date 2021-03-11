@@ -1,5 +1,8 @@
 #数据源配置
 spring:
+  application:
+    name: crudboy
+
   datasource:
     url: jdbc:mysql://127.0.0.1/crudboy
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -10,3 +13,7 @@ spring:
     hibernate:
       ddl-auto: update #没有表就创建，有就更新
     show-sql: true #显示语句
+
+
+server:
+  port: 2021
